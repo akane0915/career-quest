@@ -9,6 +9,8 @@ This is an application for organizing your job search!  Users can create unique 
 * Jennifer Kinsey
 * Spencer Alan Ruiz
 
+![Homepage](public/img/career-quest.png)
+
 schema as of 1:30pm 5/15
 ![schema](/public/img/schema.png)
 
@@ -34,12 +36,20 @@ $ postgres
 
 Navigate to this project directory in the terminal. Then type:
 ```
+$ rake db:create
 $ rake db:schema:load
+
+Ensure you are using Ruby Version 2.3.1.  Use 'ruby install' to download this version if necessary.  Use 'chruby' to change to Ruby version 2.3.1.
+
+If Bundler Gem is not installed, run :
+
+$ gem install bundler
+$ bundle
 ```
 
 In a new terminal tab, start the sinatra server by typing:
 ```
-$ruby app.rb
+$ bundle exec ruby app.rb
 ```
 Sinatra will now make this project available in your browser by going to localhost:4567.
 
@@ -73,6 +83,11 @@ Sinatra will now make this project available in your browser by going to localho
 * ES6
 * Active-Record
 
+![](public/img/SS1.png)
+![](public/img/SS2.png)
+![](public/img/SS3.png)
+![](public/img/SS4.png)
+![](public/img/SS5.png)
 
 ## License
 
